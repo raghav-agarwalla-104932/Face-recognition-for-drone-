@@ -4,12 +4,12 @@ import cv2 as cv
 
 class Tello:
     """
-    Handles connection to the DJI Tello drone
+  
     """
 
     def __init__(self, local_ip, local_port, is_dummy=False, tello_ip='192.168.10.1', tello_port=8889):
         """
-        Initializes connection with Tello and sends both command and streamon instructions
+        Initializes connection with drone and sends both command and streamon instructions
         in order to start it and begin receiving video feed.
         """
         self.background_frame_read = None
